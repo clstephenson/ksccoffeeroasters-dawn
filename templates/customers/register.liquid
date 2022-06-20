@@ -113,6 +113,14 @@
         {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
       </span>
     {%- endif -%}
+    
+    {% comment %} start custom code for klaviyo {% endcomment %}
+    <div id="accepts_marketing_checkbox" style="margin-top:10px;">
+      	<input type="hidden" name="customer[tags]" value="newsletter">
+  		<input type="checkbox" name="customer[accepts_marketing]" checked="checked" value="true" id="marketing">
+  		<label for="marketing">Yes! Keep me updated.</label>
+  	</div>
+    {% comment %} end custom code for klaviyo {% endcomment %}
     <button>
       {{ 'customer.register.submit' | t }}
     </button>

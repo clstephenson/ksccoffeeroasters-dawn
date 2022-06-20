@@ -107,6 +107,15 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+
+          {% comment %} start ksccustom code block {% endcomment %}
+          {% unless card_product.metafields.global.short_description == blank %}
+            <p class="card-information__text h5" style="text-decoration:none; font-style:italic;">
+                {{ card_product.metafields.global.short_description }}
+            </p>
+          {% endunless %}
+          {% comment %} end custom code block {% endcomment %}
+
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>

@@ -1,25 +1,85 @@
 {
   "sections": {
+    "1629845275e2ba4630": {
+      "type": "image-with-text",
+      "blocks": {
+        "1629845275e2ba4630-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get in Touch"
+          }
+        },
+        "1629845275e2ba4630-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have a question or comment about our products... or just want to say hi? Send details by  using the form below. You can also find us on social media using the links at the very bottom of the page.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1629845275e2ba4630-0",
+        "1629845275e2ba4630-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/contact-us-phone.jpg",
+        "height": "small",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "form": {
       "type": "contact-form",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
+        "heading": ""
+      }
+    },
+    "1629937059919cd32b": {
+      "type": "collection-list",
+      "blocks": {
+        "1629937059919cd32b-0": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "roasted-coffee"
+          }
+        },
+        "1629937059919cd32b-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "biscotti"
+          }
+        },
+        "1629937059919cd32b-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "all-products"
+          }
+        }
+      },
+      "block_order": [
+        "1629937059919cd32b-0",
+        "1629937059919cd32b-1",
+        "1629937059919cd32b-2"
+      ],
+      "settings": {
+        "title": "Check out our current flavors",
+        "image_ratio": "square",
         "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "swipe_on_mobile": false,
+        "image_padding": false,
+        "show_view_all": false
       }
     }
   },
   "order": [
+    "1629845275e2ba4630",
     "main",
-    "form"
+    "form",
+    "1629937059919cd32b"
   ]
 }

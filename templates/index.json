@@ -6,26 +6,161 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
+            "heading": "Coffee + Biscotti",
+            "heading_size": "h1"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
+            "button_label_1": "Find Your Match",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
+          }
+        },
+        "509c2b96-2486-4c04-8d9d-48fb702aa49f": {
+          "type": "text",
+          "settings": {
+            "text": "What could be better than relaxing with a perfect cup of fresh-roasted specialty coffee paired with crisp freshly-baked gourmet biscotti."
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button",
+        "509c2b96-2486-4c04-8d9d-48fb702aa49f"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/20210906-CoffeeWebsite-095-2048x1365.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "bottom-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_featured": {
+      "type": "rich-text",
+      "blocks": {
+        "rich_text_featured-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Featured Flavors</p>",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "rich_text_featured-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": false,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_featured_1": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_featured_1-heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "El Salvador Las Lomas"
+          }
+        },
+        "image_with_text_featured_1-text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This coffee makes a good, balanced daily cup that is great for all types of brewing. We like the chocolate and caramel profile of this one.<\/p>"
+          }
+        },
+        "image_with_text_featured_1-button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/el-salvador-las-lomas"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_featured_1-heading",
+        "image_with_text_featured_1-text",
+        "image_with_text_featured_1-button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/20210906-CoffeeWebsite-159-1024x819_cropped.jpg",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "layout": "image_first"
+      }
+    },
+    "image_with_text_featured_2": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_with_text_featured_2-heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cranberry Orange Walnut Biscotti"
+          }
+        },
+        "image_with_text_featured_2-text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>This cranberry orange walnut biscotti balances fruity sweetness with a particularly lovely orange essence. Perfect dipped in a cup of coffee, tea, or milk.<\/p>"
+          }
+        },
+        "image_with_text_featured_2-button": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/products\/cranberry-orange-walnut-biscotti"
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_featured_2-heading",
+        "image_with_text_featured_2-text",
+        "image_with_text_featured_2-button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/20210906-CoffeeWebsite-138-1024x819_cropped.jpg",
+        "height": "adapt",
+        "color_scheme": "background-2",
+        "layout": "text_first"
+      }
+    },
+    "rich_text_joinourquest": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Join our quest to explore unique coffee from around the globe.</p>",
+            "heading_size": "h1"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At KSC Coffee Roasters we find great specialty coffee beans from around the globe and pair them with house-made gourmet biscotti. We roast weekly, and bake the biscotti in small batches so we can bring you the most fresh, flavorful pairing possible.<\/p><p>Coffee beans that make it to our shop are some of the best coffees that we sample (no commodity coffee here!) Many of the coffees we select are available in limited quantities. Because of this, our coffee selection changes frequently. That said, we promise to keep up a flavorful and diverse rotation for you to choose from! Check back often - you never know what you might find next.<\/p>"
+          }
+        },
+        "button": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
           }
         }
       },
@@ -35,177 +170,35 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Talk about your brand</p>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
+        "color_scheme": "background-2",
+        "full_width": true
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
+        "title": "Find some other great flavors!",
+        "collection": "featured",
+        "products_to_show": 4,
+        "show_view_all": true,
+        "swipe_on_mobile": true,
+        "image_ratio": "square",
         "show_secondary_image": true,
+        "add_image_padding": false,
+        "show_image_outline": true,
         "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
+        "show_rating": true,
         "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "heading_size": "h1",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "image_banner",
-    "rich_text",
-    "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "rich_text_featured",
+    "image_with_text_featured_1",
+    "image_with_text_featured_2",
+    "rich_text_joinourquest",
+    "featured_collection"
   ]
 }

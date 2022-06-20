@@ -1,0 +1,77 @@
+{
+    "sections": {
+      "main": {
+        "type": "main-page",
+        "settings": {
+        }
+      },
+      "1629847113a4226d32": {
+        "type": "image-with-text",
+        "blocks": {
+          "1629847113a4226d32-0": {
+            "type": "heading",
+            "settings": {
+              "heading": "The KSC Team"
+            }
+          },
+          "1629847113a4226d32-1": {
+            "type": "text",
+            "settings": {
+              "text": "<p>The four-legged team that inspires us each and every day is pictured here :) Reggie (the brown pup) and Paige (the black pup) are our two rescue pups. They never fail to put a smile on the face of anyone who meets them. They may not actually be \"roasting\" but they are definitely part of the management team around here.<br\/><br\/>There is also a two-legged team behind KSC Coffee Roasters :) Chris and Kristi are the husband and wife team behind the business. Chris is the coffee guru and roaster. Kristi is the chief coffee taster and biscotti baker ... and we both do a whole lot of other things behind the scenes. Together, we make it happen!<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1629847113a4226d32-0",
+          "1629847113a4226d32-1"
+        ],
+        "settings": {
+          "image": "shopify:\/\/shop_images\/20201126-Thanksgiving-008-550x825.jpg",
+          "height": "adapt",
+          "color_scheme": "background-1",
+          "layout": "image_first"
+        }
+      },
+      "1629935268f4dd8ca6": {
+        "type": "collection-list",
+        "blocks": {
+          "1629935268f4dd8ca6-0": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "roasted-coffee"
+            }
+          },
+          "1629935268f4dd8ca6-1": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "biscotti"
+            }
+          },
+          "1629935268f4dd8ca6-2": {
+            "type": "featured_collection",
+            "settings": {
+              "collection": "all-products"
+            }
+          }
+        },
+        "block_order": [
+          "1629935268f4dd8ca6-0",
+          "1629935268f4dd8ca6-1",
+          "1629935268f4dd8ca6-2"
+        ],
+        "settings": {
+          "title": "Check out our flavors",
+          "image_ratio": "square",
+          "color_scheme": "background-1",
+          "swipe_on_mobile": false,
+          "image_padding": false,
+          "show_view_all": false
+        }
+      }
+    },
+    "order": [
+      "main",
+      "1629847113a4226d32",
+      "1629935268f4dd8ca6"
+    ]
+  }
