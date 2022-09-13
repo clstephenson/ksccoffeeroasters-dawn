@@ -289,8 +289,6 @@ class MenuDrawer extends HTMLElement {
 
     this.mainDetailsToggle = this.querySelector('details');
 
-    if (navigator.platform === 'iPhone') document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
-
     this.addEventListener('keyup', this.onKeyUp.bind(this));
     this.addEventListener('focusout', this.onFocusOut.bind(this));
     this.bindEvents();
@@ -325,6 +323,10 @@ class MenuDrawer extends HTMLElement {
     if (detailsElement === this.mainDetailsToggle) {
       if(isOpen) event.preventDefault();
       isOpen ? this.closeMenuDrawer(event, summaryElement) : this.openMenuDrawer(summaryElement);
+
+      if (window.matchMedia('(max-width: 990px)')) {
+        document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
+      }
     } else {
       setTimeout(() => {
         detailsElement.classList.add('menu-opening');
@@ -784,8 +786,8 @@ class VariantSelects extends HTMLElement {
     if (!this.currentVariant) return;
     if (!this.currentVariant.featured_media) return;
 
-    const mediaGallery = document.getElementById(`MediaGallery-${this.dataset.section}`);
-    mediaGallery.setActiveMedia(`${this.dataset.section}-${this.currentVariant.featured_media.id}`, true);
+    const mediaGalleries = document.querySelectorAll(`[id^="MediaGallery-${this.dataset.section}"]`);
+    mediaGalleries.forEach(mediaGallery => mediaGallery.setActiveMedia(`${this.dataset.section}-${this.currentVariant.featured_media.id}`, true));
 
     const modalContent = document.querySelector(`#ProductModal-${this.dataset.section} .product-media-modal__content`);
     if (!modalContent) return;
