@@ -575,6 +575,23 @@
                   </div>
                 </div>
               </noscript>
+
+            {% comment %}begin ksc custom code {% endcomment %}
+            {% if product.type == 'Roasted Coffee' %}
+              <div class="product-form__input"> 
+                <label class="form__label" for="custom-grind">Whole Bean or Ground?</label>
+                <div class="select">
+                  <select class="required select__select" required id="custom-grind" form="{{ product_form_id }}" name="properties[Grind]" />
+                    <option value="">Please Select an Option</option>
+                    <option value="NO">Whole Bean</option>
+                    <option value="YES">Ground</option>
+                  </select>
+                  {% render 'icon-caret' %}
+                </div>
+              </div>
+            {% endif %}
+            {% comment %}end custom code {% endcomment %}
+
             {%- when 'buy_buttons' -%}
               <div {{ block.shopify_attributes }}>
                 <product-form class="product-form">
