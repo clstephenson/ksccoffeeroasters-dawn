@@ -1,0 +1,26 @@
+{% comment %}
+    begin ksc custom code 
+    
+    Renders custom form fields to collect customizable information to be added to the line item properties
+
+    Accepts:
+    - product: {Object} Product Liquid object (required)
+    - product_form_id: {String} the id for the main product form (required)
+
+    Usage:
+    {% render 'ksc-main-product-custom-fields', product: product, product_form_id: product_form_id %}
+{% endcomment %}
+{% if product.type == 'Roasted Coffee' %}
+    <div class="product-form__input"> 
+      <label class="form__label" for="custom-grind">Whole Bean or Ground?</label>
+      <div class="select">
+        <select class="required select__select" required id="custom-grind" form="{{ product_form_id }}" name="properties[Grind]" />
+          <option value="">Please Select an Option</option>
+          <option value="NO">Whole Bean</option>
+          <option value="YES">Ground</option>
+        </select>
+        {% render 'icon-caret' %}
+      </div>
+    </div>
+  {% endif %}
+  {% comment %}end ksc custom code {% endcomment %}
