@@ -7,17 +7,7 @@
     <meta name="theme-color" content="">
 
     {% comment %} begin ksc custom code {% endcomment %}
-    <!-- Facebook site verification -->
-    <meta name="facebook-domain-verification" content="3fv3v0rnyy54swq31q9mroz700h59l" />
-    <!-- End Facebook site verification -->
-
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5X8MR8J');</script>
-    <!-- End Google Tag Manager -->
+    {% render 'ksc-theme-head-tags' %}
     {% comment %} end custom code {% endcomment %}
 
     <link rel="canonical" href="{{ canonical_url }}">
@@ -234,7 +224,7 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
 
     {% comment %} begin ksc custom code {% endcomment %}
-    {{ 'my_custom_styles.css' | asset_url | stylesheet_tag }}
+    {% render 'ksc-theme-custom-css-includes' %}
     {% comment %} end custom code {% endcomment %}
 
     {%- unless settings.type_body_font.system? -%}
@@ -258,10 +248,7 @@
   <body class="gradient">
 
     {% comment %} begin ksc custom code {% endcomment %}
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5X8MR8J"
-      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
+    {% render 'ksc-theme-body-start-tags' %}
     {% comment %} end custom code {% endcomment %}
 
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">

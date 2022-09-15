@@ -1,0 +1,13 @@
+{% comment %}
+    begin ksc custom code 
+    
+    Renders custom css includes in the head section of theme.liquid
+
+    Accepts:
+     none
+
+    Usage:
+    {% render 'ksc-theme-custom-css-includes' %}
+{% endcomment %}
+{{ 'my_custom_styles.css' | asset_url | stylesheet_tag }}
+{% comment %}end ksc custom code {% endcomment %}
