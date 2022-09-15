@@ -119,7 +119,12 @@
         "settings": {
           "enable_sticky_info": true,
           "hide_variants": true,
-          "enable_video_looping": false
+          "enable_video_looping": false,
+          "gallery_layout": "thumbnail",
+          "mobile_thumbnails": "show",
+          "media_size": "small",
+          "padding_top": 36,
+          "padding_bottom": 12
         }
       },
       "product-recommendations": {
