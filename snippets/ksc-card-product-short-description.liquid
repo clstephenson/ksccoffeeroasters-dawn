@@ -1,0 +1,17 @@
+{% comment %}
+    begin ksc custom code 
+    
+    Renders short description metafield in card-product.liquid snippet
+
+    Accepts:
+    - card_product: {Object} Product Liquid object (required)
+
+    Usage:
+    {% render 'ksc-card-product-short-description', card_product: card_product %}
+{% endcomment %}
+{% unless card_product.metafields.global.short_description == blank %}
+    <p class="card-information__text h5" style="text-decoration:none; font-style:italic;">
+        {{ card_product.metafields.global.short_description }}
+    </p>
+{% endunless %}
+{% comment %}end ksc custom code {% endcomment %}
