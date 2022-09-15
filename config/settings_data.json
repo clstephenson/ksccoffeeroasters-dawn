@@ -112,7 +112,7 @@
         "announcement-bar": {
           "type": "announcement-bar",
           "blocks": {
-            "announcement-bar-0": {
+            "announcement-bar-freeshipping": {
               "type": "announcement",
               "settings": {
                 "text": "FREE SHIPPING when you spend $35 (use code FREESHIPPING at checkout)",
@@ -122,7 +122,7 @@
             }
           },
           "block_order": [
-            "announcement-bar-0"
+            ""
           ]
         },
         "header": {
