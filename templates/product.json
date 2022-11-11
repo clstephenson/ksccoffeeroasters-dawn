@@ -1,105 +1,99 @@
 {
-  "sections": {
-    "main": {
-      "type": "main-product",
-      "blocks": {
-        "vendor": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
+    "sections": {
+        "main": {
+            "type": "main-product",
+            "blocks": {
+                "vendor": {
+                    "type": "text",
+                    "disabled": true,
+                    "settings": {
+                        "text": "{{ product.vendor }}",
+                        "text_style": "uppercase"
+                    }
+                },
+                "title": {
+                    "type": "title",
+                    "settings": {}
+                },
+                "subtitle": {
+                    "type": "text",
+                    "settings": {
+                        "text": "{{ product.metafields.descriptors.subtitle.value }}",
+                        "text_style": "subtitle"
+                    }
+                },
+                "price": {
+                    "type": "price",
+                    "settings": {}
+                },
+                "variant_picker": {
+                    "type": "variant_picker",
+                    "settings": {
+                        "picker_type": "button"
+                    }
+                },
+                "quantity_selector": {
+                    "type": "quantity_selector",
+                    "settings": {}
+                },
+                "buy_buttons": {
+                    "type": "buy_buttons",
+                    "settings": {
+                        "show_dynamic_checkout": true
+                    }
+                },
+                "8ca5581a-7f44-4728-90c2-2750835be8e9": {
+                    "type": "custom_liquid",
+                    "settings": {
+                        "custom_liquid": "{% if product.metafields.coffee.country %}\n    <div>Country: {{ product.metafields.coffee.country.value }}<\/div>\n{% endif %}\n{% if product.metafields.coffee.region %}\n    <div>Region: {{ product.metafields.coffee.region.value }}<\/div>\n{% endif %}\n{% if product.metafields.coffee.farm %}\n    <div>Farm: {{ product.metafields.coffee.farm.value }}<\/div>\n{% endif %}\n{% if product.metafields.coffee.variety %}\n    <div>Variety: {{ product.metafields.coffee.variety.value }}<\/div>\n{% endif %}\n{% if product.metafields.coffee.process %}\n    <div>Process: {{ product.metafields.coffee.process.value }}<\/div>\n{% endif %}\n{% if product.metafields.coffee.altitude %}\n    <div>Altitude: {{ product.metafields.coffee.altitude.value }}<\/div>\n{% endif %}"
+                    }
+                },
+                "description": {
+                    "type": "description",
+                    "settings": {}
+                },
+                "share": {
+                    "type": "share",
+                    "settings": {
+                        "share_label": "Share"
+                    }
+                }
+            },
+            "block_order": [
+                "vendor",
+                "title",
+                "subtitle",
+                "price",
+                "variant_picker",
+                "quantity_selector",
+                "buy_buttons",
+                "8ca5581a-7f44-4728-90c2-2750835be8e9",
+                "description",
+                "share"
+            ],
+            "settings": {
+                "enable_sticky_info": true,
+                "gallery_layout": "thumbnail",
+                "media_size": "small",
+                "mobile_thumbnails": "show",
+                "hide_variants": true,
+                "enable_video_looping": false,
+                "padding_top": 36,
+                "padding_bottom": 12
+            }
         },
-        "title": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "subtitle": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "8ca5581a-7f44-4728-90c2-2750835be8e9": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "{% if product.metafields.coffee.country %}\n    <div>Country: {{ product.metafields.coffee.country.value }}<\/div>\n{% endif %}\n{% if product.metafields.coffee.region %}\n    <div>Region: {{ product.metafields.coffee.region.value }}<\/div>\n{% endif %}\n{% if product.metafields.coffee.farm %}\n    <div>Farm: {{ product.metafields.coffee.farm.value }}<\/div>\n{% endif %}\n{% if product.metafields.coffee.variety %}\n    <div>Variety: {{ product.metafields.coffee.variety.value }}<\/div>\n{% endif %}\n{% if product.metafields.coffee.process %}\n    <div>Process: {{ product.metafields.coffee.process.value }}<\/div>\n{% endif %}\n{% if product.metafields.coffee.altitude %}\n    <div>Altitude: {{ product.metafields.coffee.altitude.value }}<\/div>\n{% endif %}"
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
+        "product-recommendations": {
+            "type": "product-recommendations",
+            "settings": {
+                "heading": "You may also like",
+                "image_ratio": "adapt",
+                "show_secondary_image": true,
+                "show_vendor": false
+            }
         }
-      },
-      "block_order": [
-        "vendor",
-        "title",
-        "subtitle",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "8ca5581a-7f44-4728-90c2-2750835be8e9",
-        "description",
-        "share"
-      ],
-      "settings": {
-        "enable_sticky_info": true,
-        "hide_variants": true,
-        "enable_video_looping": false,
-        "gallery_layout": "thumbnail",
-        "mobile_thumbnails": "show",
-        "media_size": "small",
-        "padding_top": 36,
-        "padding_bottom": 12
-      }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "You may also like",
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "add_image_padding": true,
-        "show_image_outline": false,
-        "show_vendor": false
-      }
-    }
-  },
-  "order": [
-    "main",
-    "product-recommendations"
-  ]
+    "order": [
+        "main",
+        "product-recommendations"
+    ]
 }

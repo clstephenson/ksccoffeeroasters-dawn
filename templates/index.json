@@ -1,204 +1,241 @@
 {
-  "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Coffee + Biscotti",
-            "heading_size": "h1"
-          }
+    "sections": {
+        "image_banner": {
+            "type": "image-banner",
+            "blocks": {
+                "heading": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Coffee + Biscotti",
+                        "heading_size": "h1"
+                    }
+                },
+                "button": {
+                    "type": "buttons",
+                    "settings": {
+                        "button_label_1": "Find Your Match",
+                        "button_link_1": "shopify:\/\/collections\/all",
+                        "button_style_secondary_1": false,
+                        "button_label_2": "",
+                        "button_link_2": "",
+                        "button_style_secondary_2": false
+                    }
+                },
+                "509c2b96-2486-4c04-8d9d-48fb702aa49f": {
+                    "type": "text",
+                    "settings": {
+                        "text": "What could be better than relaxing with a perfect cup of fresh-roasted specialty coffee paired with crisp freshly-baked gourmet biscotti.",
+                        "text_style": "body"
+                    }
+                }
+            },
+            "block_order": [
+                "heading",
+                "button",
+                "509c2b96-2486-4c04-8d9d-48fb702aa49f"
+            ],
+            "settings": {
+                "image": "shopify:\/\/shop_images\/20210906-CoffeeWebsite-095-2048x1365.jpg",
+                "image_overlay_opacity": 40,
+                "image_height": "medium",
+                "adapt_height_first_image": false,
+                "desktop_content_position": "bottom-center",
+                "show_text_box": true,
+                "desktop_content_alignment": "center",
+                "color_scheme": "background-1",
+                "mobile_content_alignment": "center",
+                "stack_images_on_mobile": true,
+                "show_text_below": false
+            }
         },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Find Your Match",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
+        "rich_text_featured": {
+            "type": "rich-text",
+            "blocks": {
+                "rich_text_featured-0": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "<p>Featured Flavors<\/p>",
+                        "heading_size": "h1"
+                    }
+                }
+            },
+            "block_order": [
+                "rich_text_featured-0"
+            ],
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "background-1",
+                "full_width": false,
+                "padding_top": 40,
+                "padding_bottom": 0
+            }
         },
-        "509c2b96-2486-4c04-8d9d-48fb702aa49f": {
-          "type": "text",
-          "settings": {
-            "text": "What could be better than relaxing with a perfect cup of fresh-roasted specialty coffee paired with crisp freshly-baked gourmet biscotti."
-          }
+        "image_with_text_featured_1": {
+            "type": "image-with-text",
+            "blocks": {
+                "image_with_text_featured_1-heading": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Mexico Chiapas",
+                        "heading_size": "h1"
+                    }
+                },
+                "image_with_text_featured_1-text": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>This coffee starts as rich cocoa while hot. But as it cools, it begins to change, with a bit of molasses coming through. It's quite versatile, good with different brewing methods. If you're looking for a good coffee for your daily brew, this might be it!<\/p>",
+                        "text_style": "body"
+                    }
+                },
+                "image_with_text_featured_1-button": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "Shop Now",
+                        "button_link": "shopify:\/\/products\/mexico-chiapas"
+                    }
+                }
+            },
+            "block_order": [
+                "image_with_text_featured_1-heading",
+                "image_with_text_featured_1-text",
+                "image_with_text_featured_1-button"
+            ],
+            "settings": {
+                "image": "shopify:\/\/shop_images\/20210906-CoffeeWebsite-159-1024x819_cropped.jpg",
+                "height": "adapt",
+                "desktop_image_width": "medium",
+                "layout": "image_first",
+                "desktop_content_position": "top",
+                "desktop_content_alignment": "left",
+                "content_layout": "no-overlap",
+                "color_scheme": "background-2",
+                "mobile_content_alignment": "left",
+                "padding_top": 36,
+                "padding_bottom": 36
+            }
+        },
+        "image_with_text_featured_2": {
+            "type": "image-with-text",
+            "blocks": {
+                "image_with_text_featured_2-heading": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Pumpkin Spice Biscotti",
+                        "heading_size": "h1"
+                    }
+                },
+                "image_with_text_featured_2-text": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>This pumpkin biscotti is the perfect encapsulation of favorite fall flavors and spices. Dipped in that morning or afternoon cup of coffee it even becomes reminiscent of pumpkin pie!<\/p>",
+                        "text_style": "body"
+                    }
+                },
+                "image_with_text_featured_2-button": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "Shop Now",
+                        "button_link": "shopify:\/\/products\/pumpkin-spice-biscotti"
+                    }
+                }
+            },
+            "block_order": [
+                "image_with_text_featured_2-heading",
+                "image_with_text_featured_2-text",
+                "image_with_text_featured_2-button"
+            ],
+            "settings": {
+                "image": "shopify:\/\/shop_images\/20211017-PumpkinBiscotti-057-1024x819_cropped.jpg",
+                "height": "adapt",
+                "desktop_image_width": "medium",
+                "layout": "text_first",
+                "desktop_content_position": "top",
+                "desktop_content_alignment": "left",
+                "content_layout": "no-overlap",
+                "color_scheme": "background-2",
+                "mobile_content_alignment": "left",
+                "padding_top": 36,
+                "padding_bottom": 36
+            }
+        },
+        "rich_text_joinourquest": {
+            "type": "rich-text",
+            "blocks": {
+                "heading": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "<p>Join our quest to explore unique coffee from around the globe.<\/p>",
+                        "heading_size": "h1"
+                    }
+                },
+                "text": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>At KSC Coffee Roasters we find great specialty coffee beans from around the globe and pair them with house-made gourmet biscotti. We roast weekly, and bake the biscotti in small batches so we can bring you the most fresh, flavorful pairing possible.<\/p><p>Coffee beans that make it to our shop are some of the best coffees that we sample (no commodity coffee here!) Many of the coffees we select are available in limited quantities. Because of this, our coffee selection changes frequently. That said, we promise to keep up a flavorful and diverse rotation for you to choose from! Check back often - you never know what you might find next.<\/p>"
+                    }
+                },
+                "button": {
+                    "type": "button",
+                    "disabled": true,
+                    "settings": {
+                        "button_label": "Shop Now",
+                        "button_link": "shopify:\/\/collections\/all",
+                        "button_style_secondary": false,
+                        "button_label_2": "",
+                        "button_link_2": "",
+                        "button_style_secondary_2": false
+                    }
+                }
+            },
+            "block_order": [
+                "heading",
+                "text",
+                "button"
+            ],
+            "settings": {
+                "desktop_content_position": "center",
+                "content_alignment": "center",
+                "color_scheme": "background-2",
+                "full_width": true,
+                "padding_top": 40,
+                "padding_bottom": 52
+            }
+        },
+        "featured_collection": {
+            "type": "featured-collection",
+            "settings": {
+                "title": "Find some other great flavors!",
+                "heading_size": "h1",
+                "description": "",
+                "show_description": false,
+                "description_style": "body",
+                "collection": "featured",
+                "products_to_show": 4,
+                "columns_desktop": 4,
+                "full_width": false,
+                "show_view_all": true,
+                "view_all_style": "solid",
+                "enable_desktop_slider": false,
+                "color_scheme": "background-1",
+                "image_ratio": "square",
+                "show_secondary_image": true,
+                "show_vendor": false,
+                "show_rating": true,
+                "enable_quick_add": false,
+                "columns_mobile": "2",
+                "swipe_on_mobile": true,
+                "padding_top": 28,
+                "padding_bottom": 36
+            }
         }
-      },
-      "block_order": [
-        "heading",
-        "button",
-        "509c2b96-2486-4c04-8d9d-48fb702aa49f"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/20210906-CoffeeWebsite-095-2048x1365.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
     },
-    "rich_text_featured": {
-      "type": "rich-text",
-      "blocks": {
-        "rich_text_featured-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Featured Flavors</p>",
-            "heading_size": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "rich_text_featured-0"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": false,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
-    "image_with_text_featured_1": {
-      "type": "image-with-text",
-      "blocks": {
-        "image_with_text_featured_1-heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "El Salvador Las Lomas"
-          }
-        },
-        "image_with_text_featured_1-text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>This coffee makes a good, balanced daily cup that is great for all types of brewing. We like the chocolate and caramel profile of this one.<\/p>"
-          }
-        },
-        "image_with_text_featured_1-button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Now",
-            "button_link": "shopify:\/\/products\/el-salvador-las-lomas"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_featured_1-heading",
-        "image_with_text_featured_1-text",
-        "image_with_text_featured_1-button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/20210906-CoffeeWebsite-159-1024x819_cropped.jpg",
-        "height": "adapt",
-        "color_scheme": "background-2",
-        "layout": "image_first"
-      }
-    },
-    "image_with_text_featured_2": {
-      "type": "image-with-text",
-      "blocks": {
-        "image_with_text_featured_2-heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Cranberry Orange Walnut Biscotti"
-          }
-        },
-        "image_with_text_featured_2-text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>This cranberry orange walnut biscotti balances fruity sweetness with a particularly lovely orange essence. Perfect dipped in a cup of coffee, tea, or milk.<\/p>"
-          }
-        },
-        "image_with_text_featured_2-button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Now",
-            "button_link": "shopify:\/\/products\/cranberry-orange-walnut-biscotti"
-          }
-        }
-      },
-      "block_order": [
-        "image_with_text_featured_2-heading",
-        "image_with_text_featured_2-text",
-        "image_with_text_featured_2-button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/20210906-CoffeeWebsite-138-1024x819_cropped.jpg",
-        "height": "adapt",
-        "color_scheme": "background-2",
-        "layout": "text_first"
-      }
-    },
-    "rich_text_joinourquest": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>Join our quest to explore unique coffee from around the globe.</p>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At KSC Coffee Roasters we find great specialty coffee beans from around the globe and pair them with house-made gourmet biscotti. We roast weekly, and bake the biscotti in small batches so we can bring you the most fresh, flavorful pairing possible.<\/p><p>Coffee beans that make it to our shop are some of the best coffees that we sample (no commodity coffee here!) Many of the coffees we select are available in limited quantities. Because of this, our coffee selection changes frequently. That said, we promise to keep up a flavorful and diverse rotation for you to choose from! Check back often - you never know what you might find next.<\/p>"
-          }
-        },
-        "button": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Shop Now",
-            "button_link": "shopify:\/\/collections\/all",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "color_scheme": "background-2",
-        "full_width": true
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Find some other great flavors!",
-        "collection": "featured",
-        "products_to_show": 4,
-        "show_view_all": true,
-        "swipe_on_mobile": true,
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": true,
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    }
-  },
-  "order": [
-    "image_banner",
-    "rich_text_featured",
-    "image_with_text_featured_1",
-    "image_with_text_featured_2",
-    "rich_text_joinourquest",
-    "featured_collection"
-  ]
+    "order": [
+        "image_banner",
+        "rich_text_featured",
+        "image_with_text_featured_1",
+        "image_with_text_featured_2",
+        "rich_text_joinourquest",
+        "featured_collection"
+    ]
 }

@@ -1,56 +1,53 @@
 {
-  "sections": {
-    "main": {
-      "type": "main-search",
-      "settings": {
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "add_image_padding": false,
-        "show_image_outline": false,
-        "show_vendor": false,
-        "article_show_date": true,
-        "article_show_author": false
-      }
-    },
-    "1629938155252428ed": {
-      "type": "collection-list",
-      "blocks": {
-        "1629938155252428ed-2": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "roasted-coffee"
-          }
+    "sections": {
+        "main": {
+            "type": "main-search",
+            "settings": {
+                "image_ratio": "square",
+                "show_secondary_image": true,
+                "show_vendor": false,
+                "article_show_date": true,
+                "article_show_author": false
+            }
         },
-        "1629938155252428ed-0": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "biscotti"
-          }
-        },
-        "1629938155252428ed-1": {
-          "type": "featured_collection",
-          "settings": {
-            "collection": "all-products"
-          }
+        "1629938155252428ed": {
+            "type": "collection-list",
+            "blocks": {
+                "1629938155252428ed-2": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "roasted-coffee"
+                    }
+                },
+                "1629938155252428ed-0": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "biscotti"
+                    }
+                },
+                "1629938155252428ed-1": {
+                    "type": "featured_collection",
+                    "settings": {
+                        "collection": "all-products"
+                    }
+                }
+            },
+            "block_order": [
+                "1629938155252428ed-2",
+                "1629938155252428ed-0",
+                "1629938155252428ed-1"
+            ],
+            "settings": {
+                "title": "Check out our other flavors",
+                "image_ratio": "square",
+                "color_scheme": "background-1",
+                "show_view_all": false,
+                "swipe_on_mobile": false
+            }
         }
-      },
-      "block_order": [
-        "1629938155252428ed-2",
-        "1629938155252428ed-0",
-        "1629938155252428ed-1"
-      ],
-      "settings": {
-        "title": "Check out our other flavors",
-        "image_ratio": "square",
-        "color_scheme": "background-1",
-        "swipe_on_mobile": false,
-        "image_padding": false,
-        "show_view_all": false
-      }
-    }
-  },
-  "order": [
-    "main",
-    "1629938155252428ed"
-  ]
+    },
+    "order": [
+        "main",
+        "1629938155252428ed"
+    ]
 }
