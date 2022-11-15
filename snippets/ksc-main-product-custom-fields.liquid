@@ -10,8 +10,23 @@
     Usage:
     {% render 'ksc-main-product-custom-fields', product: product, product_form_id: product_form_id %}
 {% endcomment %}
+{% capture coffee_grind_input %}
+  <div class="product-form__input"> 
+    <label class="form__label" for="custom-grind">Whole Bean or Ground?</label>
+    <div class="select">
+      <select class="required select__select" required id="custom-grind" form="{{ product_form_id }}" name="properties[Grind]" />
+        <option value="">--</option>
+        <option value="NO">Whole Bean</option>
+        <option value="Drip">Ground - Drip/Pour-over</option>
+        <option value="French Press">Ground - French Press</option>
+      </select>
+      {% render 'icon-caret' %}
+    </div>
+  </div>
+{% endcapture %}
 {% if product.type == 'Roasted Coffee' %}
-    <div class="product-form__input"> 
+  {{ coffee_grind_input }}
+    {% comment %}<div class="product-form__input"> 
       <label class="form__label" for="custom-grind">Whole Bean or Ground?</label>
       <div class="select">
         <select class="required select__select" required id="custom-grind" form="{{ product_form_id }}" name="properties[Grind]" />
@@ -21,6 +36,51 @@
         </select>
         {% render 'icon-caret' %}
       </div>
-    </div>
-  {% endif %}
-  {% comment %}end ksc custom code {% endcomment %}
+    </div>{% endcomment %}
+{% else if product.type == 'Bundle' %}
+  {% for tag in product.tags %}
+    {% if tag contains 'bundle:' %}
+      {% assign bundle_descriptors = tag | replace: 'bundle:', '' | split: ':' %}
+      {% for bundle_descriptor in bundle_descriptors %}
+        {% assign bundle_category = bundle_descriptor | first %}
+        {% assign bundle_num_items = bundle_descriptor | last %}
+        {% assign bundle_has_coffee = false %}
+        {% for bundle_item_num in (1..bundle_num_items) %}
+          {% if bundle_category == 'c' %}
+            {% assign bundle_has_coffee = true %}
+            <div class="product-form__input"> 
+              <label class="form__label" for="custom-bundle_item_{{ bundle_item_num }}">Choose Coffee Option {{ bundle_item_num }}</label>
+              <div class="select">
+                <select class="required select__select" required id="custom-bundle_item_{{ bundle_item_num }}" form="{{ product_form_id }}" name="properties[Coffee {{ bundle_item_num }}]" />
+                  <option value="">--</option>
+                  {% for prod in collections['roasted-coffee'].products %}
+                    <option value="{{ prod.title }}">{{ prod.title }}</option>
+                  {% endfor %}
+                </select>
+                {% render 'icon-caret' %}
+              </div>
+            </div>
+          {% endif %}
+          {% if bundle_category == 'b' %}
+            <div class="product-form__input"> 
+              <label class="form__label" for="custom-bundle_item_{{ bundle_item_num }}">Choose Biscotti Option {{ bundle_item_num }}</label>
+              <div class="select">
+                <select class="required select__select" required id="custom-bundle_item_{{ bundle_item_num }}" form="{{ product_form_id }}" name="properties[Biscotti {{ bundle_item_num }}]" />
+                  <option value="">--</option>
+                  {% for prod in collections['biscotti'].products %}
+                    <option value="{{ prod.title }}">{{ prod.title }}</option>
+                  {% endfor %}
+                </select>
+                {% render 'icon-caret' %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+        {% if bundle_has_coffee == true %}
+          {{ coffee_grind_input }}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% comment %}end ksc custom code {% endcomment %}
