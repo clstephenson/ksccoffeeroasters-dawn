@@ -99,6 +99,7 @@
       "predictive_search_show_vendor": false,
       "predictive_search_show_price": false,
       "currency_code_enabled": false,
+      "show_cart_note": true,
       "checkout_header_image": "shopify:\/\/shop_images\/coffee-beans-with-blank-white.jpg",
       "checkout_logo_image": "shopify:\/\/shop_images\/headerLogo.png",
       "checkout_logo_position": "center",
