@@ -10,6 +10,10 @@
     Usage:
     {% render 'ksc-main-product-custom-fields', product: product, product_form_id: product_form_id %}
 {% endcomment %}
+
+{% assign add_grind_input = false %}
+{% assign add_personalized_message = false %}
+
 {% capture coffee_grind_input %}
   <div class="product-form__input"> 
     <label class="form__label" for="custom-grind">Whole Bean or Ground?</label>
@@ -24,63 +28,79 @@
     </div>
   </div>
 {% endcapture %}
+
+{% capture personalized_message_input %}
+  <div class="product-form__input"> 
+    <label class="form__label" for="custom-message">Gift Message (optional)</label>
+    <div class="select">
+      <textarea class="text-area field__input" style="resize:both" id="custom-message" form="{{ product_form_id }}" name="properties[Message]" /></textarea>
+    </div>
+  </div>
+{% endcapture %}
+
 {% if product.type == 'Roasted Coffee' %}
-  {{ coffee_grind_input }}
-    {% comment %}<div class="product-form__input"> 
-      <label class="form__label" for="custom-grind">Whole Bean or Ground?</label>
-      <div class="select">
-        <select class="required select__select" required id="custom-grind" form="{{ product_form_id }}" name="properties[Grind]" />
-          <option value="">Please Select an Option</option>
-          <option value="NO">Whole Bean</option>
-          <option value="YES">Ground</option>
-        </select>
-        {% render 'icon-caret' %}
-      </div>
-    </div>{% endcomment %}
-{% else if product.type == 'Bundle' %}
-  {% for tag in product.tags %}
-    {% if tag contains 'bundle:' %}
-      {% assign bundle_descriptors = tag | replace: 'bundle:', '' | split: ':' %}
-      {% for bundle_descriptor in bundle_descriptors %}
-        {% assign bundle_category = bundle_descriptor | first %}
-        {% assign bundle_num_items = bundle_descriptor | last %}
-        {% assign bundle_has_coffee = false %}
-        {% for bundle_item_num in (1..bundle_num_items) %}
-          {% if bundle_category == 'c' %}
-            {% assign bundle_has_coffee = true %}
-            <div class="product-form__input"> 
-              <label class="form__label" for="custom-bundle_item_{{ bundle_item_num }}">Choose Coffee Option {{ bundle_item_num }}</label>
-              <div class="select">
-                <select class="required select__select" required id="custom-bundle_item_{{ bundle_item_num }}" form="{{ product_form_id }}" name="properties[Coffee {{ bundle_item_num }}]" />
-                  <option value="">--</option>
-                  {% for prod in collections['roasted-coffee'].products %}
-                    <option value="{{ prod.title }}">{{ prod.title }}</option>
-                  {% endfor %}
-                </select>
-                {% render 'icon-caret' %}
-              </div>
+  {% assign add_grind_input = true %}
+{% endif %}
+
+{% for tag in product.tags %}
+  
+  {% if tag contains 'bundle:' %}
+    {% assign bundle_descriptors = tag | replace: 'bundle:', '' | split: ':' %}
+    {% for bundle_descriptor in bundle_descriptors %}
+      {% assign bundle_category = bundle_descriptor | first %}
+      {% assign bundle_num_items = bundle_descriptor | last %}
+      {% assign bundle_has_coffee = false %}
+      {% for bundle_item_num in (1..bundle_num_items) %}
+        {% if bundle_category == 'c' %}
+          {% assign add_grind_input = true %}
+          <div class="product-form__input"> 
+            <label class="form__label" for="custom-bundle_item_{{ bundle_item_num }}">Coffee Option {{ bundle_item_num }}</label>
+            <div class="select">
+              <select class="required select__select" required id="custom-bundle_item_{{ bundle_item_num }}" form="{{ product_form_id }}" name="properties[C{{ bundle_item_num }}]" />
+                <option value="">--</option>
+                {% for prod in collections['roasted-coffee'].products %}
+                  <option value="{{ prod.title }}">{{ prod.title }}</option>
+                {% endfor %}
+              </select>
+              {% render 'icon-caret' %}
             </div>
-          {% endif %}
-          {% if bundle_category == 'b' %}
-            <div class="product-form__input"> 
-              <label class="form__label" for="custom-bundle_item_{{ bundle_item_num }}">Choose Biscotti Option {{ bundle_item_num }}</label>
-              <div class="select">
-                <select class="required select__select" required id="custom-bundle_item_{{ bundle_item_num }}" form="{{ product_form_id }}" name="properties[Biscotti {{ bundle_item_num }}]" />
-                  <option value="">--</option>
-                  {% for prod in collections['biscotti'].products %}
-                    <option value="{{ prod.title }}">{{ prod.title }}</option>
-                  {% endfor %}
-                </select>
-                {% render 'icon-caret' %}
-              </div>
+          </div>
+        {% endif %}
+        {% if bundle_category == 'b' %}
+          <div class="product-form__input"> 
+            <label class="form__label" for="custom-bundle_item_{{ bundle_item_num }}">Biscotti Option {{ bundle_item_num }}</label>
+            <div class="select">
+              <select class="required select__select" required id="custom-bundle_item_{{ bundle_item_num }}" form="{{ product_form_id }}" name="properties[B{{ bundle_item_num }}]" />
+                <option value="">--</option>
+                {% for prod in collections['biscotti'].products %}
+                  <option value="{{ prod.title }}">{{ prod.title }}</option>
+                {% endfor %}
+              </select>
+              {% render 'icon-caret' %}
             </div>
-          {% endif %}
-        {% endfor %}
-        {% if bundle_has_coffee == true %}
-          {{ coffee_grind_input }}
+          </div>
         {% endif %}
       {% endfor %}
+      {% if bundle_has_coffee == true %}
+        {{ coffee_grind_input }}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% if tag contains 'personalize:' %}
+    {% assign bundle_descriptor = tag | replace: 'bundle:', '' %}
+    {% if bundle_descriptor contains 'message' %}
+      {% assign add_personalized_message = true %}
     {% endif %}
-  {% endfor %}
+  {% endif %}
+
+{% endfor %}
+
+{% if add_grind_input == true %}
+  {{ coffee_grind_input }}
+{% endif %}
+
+{% if add_personalized_message == true %}
+  {{ personalized_message_input }}
 {% endif %}
 {% comment %}end ksc custom code {% endcomment %}
