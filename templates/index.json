@@ -48,6 +48,50 @@
                 "show_text_below": false
             }
         },
+        "top_featured_block": {
+          "type": "image-with-text",
+          "blocks": {
+            "template--16129121222881__top_featured_block-167018805055afff0b-0": {
+              "type": "heading",
+              "settings": {
+                "heading": "New Gift Boxes!",
+                "heading_size": "h1"
+              }
+            },
+            "template--16129121222881__top_featured_block-167018805055afff0b-1": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Create the perfect gift bundle for the coffee or biscotti lover in your life. Choose the flavors included in the box and even add a personal message!<\/p>",
+                "text_style": "body"
+              }
+            },
+            "template--16129121222881__top_featured_block-167018805055afff0b-2": {
+              "type": "button",
+              "settings": {
+                "button_label": "Build Your Gift Box",
+                "button_link": "shopify:\/\/collections\/gift-bundles"
+              }
+            }
+          },
+          "block_order": [
+            "template--16129121222881__top_featured_block-167018805055afff0b-0",
+            "template--16129121222881__top_featured_block-167018805055afff0b-1",
+            "template--16129121222881__top_featured_block-167018805055afff0b-2"
+          ],
+          "settings": {
+            "image": "shopify:\/\/shop_images\/20221112-CoffeeGiftBox-012_3199x2048_cropped_bf26baae-c91d-494b-a779-07fba8d9feb6.jpg",
+            "height": "adapt",
+            "desktop_image_width": "medium",
+            "layout": "image_first",
+            "desktop_content_position": "top",
+            "desktop_content_alignment": "left",
+            "content_layout": "no-overlap",
+            "color_scheme": "background-2",
+            "mobile_content_alignment": "left",
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        },
         "rich_text_featured": {
             "type": "rich-text",
             "blocks": {
@@ -121,14 +165,14 @@
                 "image_with_text_featured_2-heading": {
                     "type": "heading",
                     "settings": {
-                        "heading": "Pumpkin Spice Biscotti",
+                        "heading": "Chocolate Peppermint Biscotti",
                         "heading_size": "h1"
                     }
                 },
                 "image_with_text_featured_2-text": {
                     "type": "text",
                     "settings": {
-                        "text": "<p>This pumpkin biscotti is the perfect encapsulation of favorite fall flavors and spices. Dipped in that morning or afternoon cup of coffee it even becomes reminiscent of pumpkin pie!<\/p>",
+                        "text": "<p>Chocolate and peppermint are perfectly paired in this crisp treat. Available for a limited time during the winter holidays.<\/p>",
                         "text_style": "body"
                     }
                 },
@@ -136,7 +180,7 @@
                     "type": "button",
                     "settings": {
                         "button_label": "Shop Now",
-                        "button_link": "shopify:\/\/products\/pumpkin-spice-biscotti"
+                        "button_link": "shopify:\/\/products\/chocolate-peppermint-biscotti"
                     }
                 }
             },
@@ -146,7 +190,7 @@
                 "image_with_text_featured_2-button"
             ],
             "settings": {
-                "image": "shopify:\/\/shop_images\/20211017-PumpkinBiscotti-057-1024x819_cropped.jpg",
+                "image": "shopify:\/\/shop_images\/20221116-ChocolatePeppermintBiscotti-017_1024x819_cropped_7e083a8d-d875-42ab-bcfb-f6be1cae13bf.jpg",
                 "height": "adapt",
                 "desktop_image_width": "medium",
                 "layout": "text_first",
@@ -232,6 +276,7 @@
     },
     "order": [
         "image_banner",
+        "top_featured_block",
         "rich_text_featured",
         "image_with_text_featured_1",
         "image_with_text_featured_2",
