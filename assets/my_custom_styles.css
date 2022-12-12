@@ -2,3 +2,12 @@
 .spr-starrating {
 	justify-content: left !important;  
 }*/
+
+.ksc-product_options_note {
+	padding: 1em;
+}
+
+.ksc-product_options_note p {
+	margin: 0px;
+	font-style: italic;
+}
