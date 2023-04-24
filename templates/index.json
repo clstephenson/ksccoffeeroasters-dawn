@@ -121,14 +121,14 @@
                 "image_with_text_featured_1-heading": {
                     "type": "heading",
                     "settings": {
-                        "heading": "Mexico Chiapas",
+                        "heading": "Sumatra Ribang Gayo",
                         "heading_size": "h1"
                     }
                 },
                 "image_with_text_featured_1-text": {
                     "type": "text",
                     "settings": {
-                        "text": "<p>This coffee starts as rich cocoa while hot. But as it cools, it begins to change, with a bit of molasses coming through. It's quite versatile, good with different brewing methods. If you're looking for a good coffee for your daily brew, this might be it!<\/p>",
+                        "text": "<p>This is a naturally processed bean from Sumatra. This one is a bit unique for the region. it is super smooth and well balanced. It has a subtle sweet fruitiness, and a rich chocolate finish.<\/p>",
                         "text_style": "body"
                     }
                 },
@@ -136,7 +136,7 @@
                     "type": "button",
                     "settings": {
                         "button_label": "Shop Now",
-                        "button_link": "shopify:\/\/products\/mexico-chiapas"
+                        "button_link": "shopify:\/\/products\/sumatra-ribang-gayo"
                     }
                 }
             },
